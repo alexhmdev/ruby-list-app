@@ -18,6 +18,7 @@ class App
             puts "u - uncheck an item"
             puts "d - delete all items"
             puts "e - exit"
+            puts "what do you want to do?"
 
             input = gets.chomp
 
