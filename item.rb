@@ -9,7 +9,7 @@ class Item
         if @checked
             "[x] ".red + @text.green
         else
-            "[ ] ".blue + @text.blue    
+            "[ ] ".red + @text.blue    
         end
     end
 end

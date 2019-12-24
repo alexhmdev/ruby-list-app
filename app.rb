@@ -19,7 +19,7 @@ class App
             puts "u - uncheck an item".bold
             puts "d - delete all items".bold
             puts "e - exit".bold
-            puts "what do you want to do?".blue
+            puts "what do you want to do?".cyan
 
             input = gets.chomp
 
@@ -30,21 +30,21 @@ class App
             when 'a'
                 puts "List:".blue.bold
                 @list.show_all
-                puts "Type the new item:".blue
+                puts "Type the new item:".cyan
                 item = gets.chomp
                 @list.add_item item
                 puts " "
                 puts "List:".blue.bold
                 @list.show_all
                 puts " "
-                puts "press enter to exit".blue
+                puts "press enter to exit".cyan
                 input = gets.chomp
                 puts " " # this is to make a space in the console
             when 'l'
                 puts "List:".blue.bold
                 @list.show_all
                 puts " "
-                puts "press enter to exit".blue
+                puts "press enter to exit".cyan
                 input = gets.chomp
                 puts " " # another space
             when 'r'
@@ -56,31 +56,31 @@ class App
                 puts "List:".blue.bold
                 @list.show_all
                 puts " "
-                puts "press enter to exit".blue
+                puts "press enter to exit".cyan
                 input = gets.chomp
                 puts " " # space
             when 'c'
                 puts "List:".blue.bold
                 @list.show_all
-                puts "What item number do you want to check?".blue.bold
+                puts "What item number do you want to check?".cyan.bold
                 item = gets.chomp.to_i
                 @list.check_item item
                 puts "List:".blue.bold
                 @list.show_all
                 puts " "
-                puts "press enter to exit".blue
+                puts "press enter to exit".cyan
                 input = gets.chomp
                 puts " "
             when 'u'
                 puts "List:".blue.bold
                 @list.show_all
-                puts "What item number do you want to uncheck?".blue
+                puts "What item number do you want to uncheck?".cyan.bold
                 item = gets.chomp.to_i
                 @list.uncheck_item item
                 puts "List:".blue.bold
                 @list.show_all
                 puts " "
-                puts "press enter to exit".blue
+                puts "press enter to exit".cyan
                 input = gets.chomp
                 puts " "    
             when 'd'
@@ -92,13 +92,13 @@ class App
                 when 'y'
                     @list.remove_all
                     @list.show_all
-                    puts "press enter to exit".blue
+                    puts "press enter to exit".cyan
                     input = gets
                 when 'n'
                     puts "List:".blue.bold
                     @list.show_all
                     puts " "
-                    puts "press enter to exit".blue
+                    puts "press enter to exit".cyan
                     input = gets    
             end    
         end
