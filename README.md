@@ -7,7 +7,7 @@ A simple list app with Ruby
 To run the app just type in the console
 > `ruby app.rb`
 
-In this app you can:
+##### In this app you can:
 - Add items
 - List items
 - Check listed items
